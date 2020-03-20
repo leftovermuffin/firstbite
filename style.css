@@ -1,0 +1,36 @@
+body{
+	color: white;
+	font-size: 0;
+
+}
+
+div{
+	padding: 2px;
+}
+
+.box{
+	display: inline-block;
+	background: #345;
+	width: 20px;
+	height: 20px;
+	align-content: center;
+	transition: transform 300ms ease-in-out, height 500ms, width 500ms, font-size 500ms;
+
+	pointer-events: none;
+}
+
+.parent{
+	display: inline-block;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+
+}
+
+.parent:hover .box{
+	transform: translate(200px);
+	width: 400px;
+	height: 300px;
+	font-size: 30px;
+}
+
